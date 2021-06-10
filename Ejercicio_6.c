@@ -1,12 +1,18 @@
 #include <stdlib.h>
-#include <stddio.h>
+#include <stdio.h>
 #include <time.h>
 
-int main(int argc, char  *argv[]) {
-int a =atoi(argv[1])
-int b =atoi(argv[2]) 
+int main(void) {
+int a = 1;
+int b = 6;
 
+srand (time(NULL));
+int c = rand();
+int d = rand();
+ int e = (c % (b - a + 1)+ a);
+ int f = (d % (b - a + 1)+ a);
 
+printf("%d\n", e + f );
 
 
 
