@@ -1,3 +1,4 @@
+//Coseno al cuadrado mas seno al cuadrado.
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,3 +1,5 @@
+//Si alguno es mas grande que los dos verdarero
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

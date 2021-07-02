@@ -1,3 +1,5 @@
+//Numero aleatorio entre a y b
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -11,7 +13,7 @@ int main(int argc, char *argv[]) {
      printf("Solo numeros positivos\n");
 return 1;
   }
-  
+
 
 
   srand(time(NULL));

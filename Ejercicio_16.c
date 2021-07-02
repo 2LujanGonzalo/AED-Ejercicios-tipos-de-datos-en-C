@@ -1,3 +1,5 @@
+//suma de vectores
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>

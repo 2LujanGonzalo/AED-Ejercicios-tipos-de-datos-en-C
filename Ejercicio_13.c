@@ -1,3 +1,5 @@
+//vambio de valores entre a y b.
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
