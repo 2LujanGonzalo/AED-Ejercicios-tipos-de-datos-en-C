@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-//Conversor de plata
-=======
->>>>>>> 117f9f9fb77adce3aa854ebc890773d9d2db95ce
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -25,7 +21,7 @@ printf("50:%d\n",Dinero/50 );
 Dinero=Dinero%50;
 
 printf("20:%d\n",Dinero/20 );
-Dinero=Diut nero%20;
+Dinero=Dinero%20;
 
 printf("10:%d\n",Dinero/10 );
 
