@@ -6,29 +6,29 @@
 
 int main(int argc, char *argv[]) {
 
-  int a =atoi(argv[1]);
-  int b =atoi(argv[2]);
-  int c =atoi(argv[3]);
+  int Ux =atoi(argv[1]);
+  int Uy =atoi(argv[2]);
+  int Uz =atoi(argv[3]);
 
-  int d =atoi(argv[4]);
-  int e =atoi(argv[5]);
-  int f =atoi(argv[6]);
+  int Vx =atoi(argv[4]);
+  int Vy =atoi(argv[5]);
+  int Vz =atoi(argv[6]);
 
-  printf("Usted hizo el producto cruz de los vectores en R3: X=(%d, %d, %d) e Y=(%d, %d, %d) \n",a, b, c, d, e, f );
+  printf("Usted hizo el producto cruz de los vectores en R3: U=(%d, %d, %d) e Y=(%d, %d, %d) \n",Ux, Uy, Uz, Vx, Vy, Vz );
 
-int bf=b*f;
-int ce=c*e;
-int bfce=bf - ce;
+int UyVz=Uy*Vz;
+int UzVy=Uz*Vy;
+int pvX=UyVz-UzVy;
 
-int af=a*f;
-int cd=c*d;
-int afcd=af - cd;
+int UzVx=Uz*Vx;
+int UxVz=Ux*Vz;
+int pvY=UzVx-UxVz;
 
-int ae=a*e;
-int bd=b*d;
-int aebd=ae - bd;
+int UxVy=Ux*Vy;
+int UyVx=Uy*Vx;
+int pvZ=UxVy - UyVx;
 
-printf("El producto Vectorial entre X e Y es (%d, %d, %d)\n",bfce, afcd, aebd );
+printf("El producto Vectorial entre X e Y es (%d, %d, %d)\n",pvX, pvY, pvZ );
 
 
   return 0;
