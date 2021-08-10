@@ -2,21 +2,19 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
 
-int main(void){
-int a = 0;
-int b = 420;
 
-  printf("a=%d\t b=%d\n",a, b );
-srand(time(NULL));
-int r=rand();
- r=((r%b-a+a)+a);
- int v=((r%b-a+5)+a);
-if (r==a || r==b || v==a || v==b) {
-((r%b-a+1)+a) && ((v%b-a+5)+a);
-} else {
-  printf("a=%d b=%d\n",r, v);
-}
+int main(int argc, char const *argv[]) {
+
+
+int a = atoi(argv[1]);
+int b = atoi(argv[2]);
+printf("a:%d\t b:%d\n",a,b );
+
+int c=a;
+
+a=b;
+b=c;
+printf("a:%d\t b:%d\n",a,b );
   return 0;
   }
