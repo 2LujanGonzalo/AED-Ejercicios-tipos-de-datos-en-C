@@ -3,22 +3,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
+int main(void){
 
-int main(void) {
-int a = 1;
-int b = 6;
+srand(time(NULL));
 
-srand (time(NULL));
-int c = rand();
-int d = rand();
- int e = (c % (b - a + 1)+ a);
- int f = (d % (b - a + 1)+ a);
+int dado1=(rand()%6)+1;
+int dado2=(rand()%6)+1;
 
-printf("%d\n", e + f );
-
-
-
-
+printf("%d\n", dado1+dado2);
 
   return 0;
 }
